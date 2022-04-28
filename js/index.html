@@ -191,6 +191,7 @@ let c = ">";
         $("#text").val(
             x.slice(0, curPos) + text_to_insert + x.slice(curPos));
     }
+
 </script>
 <script>
     function zapisz() {
@@ -219,7 +220,7 @@ let c = ">";
     <input type="submit" value="H6" onclick="h6()">
     <input type="submit" value="div" onclick="div()">
     <input type="submit" value="section" onclick="section()">
-    <input type="submit" value="article" onclick="article()">
+    <input type="submit" value="article" onclick="article()"><br>
     <input type="submit" value="img" onclick="img()">
     <input type="submit" value="table" onclick="table()">
     <input type="submit" value="aside" onclick="aside()">
@@ -234,6 +235,7 @@ let c = ">";
 <center>
     <br>
     <button id="pobierz" onclick="zapisz()"><img src="floppy-disk.png" alt="Zapisz"></button>
+
 
     <div id="kod">
         <textarea id="text" rows="30" cols="80"></textarea>
