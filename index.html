@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edytor HTML - JS</title>
+</head>
+<body>
+<script  src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous">
+</script>
+
+<script>
+    function h1(){
+        var curPos = document.getElementById("text").selectionStart;
+        console.log(curPos);
+        let x = $("#text").val();
+        let text_to_insert = "<h1> </h1>";
+        $("#text").val(
+            x.slice(0, curPos) + text_to_insert + x.slice(curPos));
+    }
+    function h2(){
+        var curPos = document.getElementById("text").selectionStart;
+        console.log(curPos);
+        let x = $("#text").val();
+        let text_to_insert = "<h2> </h2>";
+        $("#text").val(
+            x.slice(0, curPos) + text_to_insert + x.slice(curPos));
+    }
+    function h3(){
+        var curPos = document.getElementById("text").selectionStart;
+        console.log(curPos);
+        let x = $("#text").val();
+        let text_to_insert = "<h3> </h3>";
+        $("#text").val(
+            x.slice(0, curPos) + text_to_insert + x.slice(curPos));
+    }
+    function h4(){
+        var curPos = document.getElementById("text").selectionStart;
+        console.log(curPos);
+        let x = $("#text").val();
+        let text_to_insert = "<h4> </h4>";
+        $("#text").val(
+            x.slice(0, curPos) + text_to_insert + x.slice(curPos));
+    }
+    function h5(){
+        var curPos = document.getElementById("text").selectionStart;
+        console.log(curPos);
+        let x = $("#text").val();
+        let text_to_insert = "<h5> </h5>";
+        $("#text").val(
+            x.slice(0, curPos) + text_to_insert + x.slice(curPos));
+    }
+    function h6(){
+        var curPos = document.getElementById("text").selectionStart;
+        console.log(curPos);
+        let x = $("#text").val();
+        let text_to_insert = "<h6> </h6>";
+        $("#text").val(
+            x.slice(0, curPos) + text_to_insert + x.slice(curPos));
+    }
+    function HTML5(){
+        var curPos = document.getElementById("text").selectionStart;
+        console.log(curPos);
+        let x = $("#text").val();
+        let text_to_insert = "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta charset=\"UTF-8\">\n<meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n<title>Document</title>\n</head>\n<body>\n\n</body>\n</html>";
+        $("#text").val(
+            x.slice(0, curPos) + text_to_insert + x.slice(curPos));
+    }
+    function css(){
+        var curPos = document.getElementById("text").selectionStart;
+        console.log(curPos);
+        let x = $("#text").val();
+        let text_to_insert = "<link rel=\"stylesheet\" href=\"nazwa.css\">";
+        $("#text").val(
+            x.slice(0, curPos) + text_to_insert + x.slice(curPos));
+    }
+    function p(){
+        var curPos = document.getElementById("text").selectionStart;
+        console.log(curPos);
+        let x = $("#text").val();
+        let text_to_insert = "<p> </p>";
+        $("#text").val(
+            x.slice(0, curPos) + text_to_insert + x.slice(curPos));
+    }
+    function div(){
+        var curPos = document.getElementById("text").selectionStart;
+        console.log(curPos);
+        let x = $("#text").val();
+        let text_to_insert = "<div> </div>";
+        $("#text").val(
+            x.slice(0, curPos) + text_to_insert + x.slice(curPos));
+    }
+    function section(){
+        var curPos = document.getElementById("text").selectionStart;
+        console.log(curPos);
+        let x = $("#text").val();
+        let text_to_insert = "<section> </section>";
+        $("#text").val(
+            x.slice(0, curPos) + text_to_insert + x.slice(curPos));
+    }
+    function article(){
+        var curPos = document.getElementById("text").selectionStart;
+        console.log(curPos);
+        let x = $("#text").val();
+        let text_to_insert = "<article> </article>";
+        $("#text").val(
+            x.slice(0, curPos) + text_to_insert + x.slice(curPos));
+    }
+    function img(){
+        var curPos = document.getElementById("text").selectionStart;
+        console.log(curPos);
+        let x = $("#text").val();
+        let text_to_insert = "<img src=\"\" alt=\"\">\n";
+        $("#text").val(
+            x.slice(0, curPos) + text_to_insert + x.slice(curPos));
+    }
+    function table(){
+        var curPos = document.getElementById("text2").selectionStart;
+        console.log(curPos);
+        let x = $("#text2").val();
+        let text_to_insert = "<table>\n<tr>\n<th> </th>\n<th> </th>\n</tr>\n<tr>\n<th> </th>\n<th> </th>\n</tr>\n</table>";
+        $("#text2").val(
+            x.slice(0, curPos) + text_to_insert + x.slice(curPos));
+    }
+    function aside(){
+        var curPos = document.getElementById("text").selectionStart;
+        console.log(curPos);
+        let x = $("#text").val();
+        let text_to_insert = "<aside> </aside>";
+        $("#text").val(
+            x.slice(0, curPos) + text_to_insert + x.slice(curPos));
+    }
+    function script(){
+        var curPos = document.getElementById("text").selectionStart;
+        console.log(curPos);
+        let x = $("#text").val();
+let a = "<script";
+let b = "></script";
+let c = ">";
+        let text_to_insert = a+b+c;
+        $("#text").val(
+            x.slice(0, curPos) + text_to_insert + x.slice(curPos));
+    }
+    function nav() {
+        var curPos = document.getElementById("text").selectionStart;
+        console.log(curPos);
+        let x = $("#text").val();
+        let text_to_insert = "<nav> </nav>";
+        $("#text").val(
+            x.slice(0, curPos) + text_to_insert + x.slice(curPos));
+    }
+    function input() {
+        var curPos = document.getElementById("text").selectionStart;
+        console.log(curPos);
+        let x = $("#text").val();
+        let text_to_insert = "<input type=''>";
+        $("#text").val(
+            x.slice(0, curPos) + text_to_insert + x.slice(curPos));
+    }
+    function formularz() {
+        var curPos = document.getElementById("text2").selectionStart;
+        console.log(curPos);
+        let x = $("#text2").val();
+        let text_to_insert = "<form method='' action=''> \n \n</form>";
+        $("#text2").val(
+            x.slice(0, curPos) + text_to_insert + x.slice(curPos));
+    }
+    function footer() {
+        var curPos = document.getElementById("text").selectionStart;
+        console.log(curPos);
+        let x = $("#text").val();
+        let text_to_insert = "<footer> \n \n</footer>";
+        $("#text").val(
+            x.slice(0, curPos) + text_to_insert + x.slice(curPos));
+    }
+    function header() {
+        var curPos = document.getElementById("text").selectionStart;
+        console.log(curPos);
+        let x = $("#text").val();
+        let text_to_insert = "<header> \n </header>";
+        $("#text").val(
+            x.slice(0, curPos) + text_to_insert + x.slice(curPos));
+    }
+    function main() {
+        var curPos = document.getElementById("text").selectionStart;
+        console.log(curPos);
+        let x = $("#text").val();
+        let text_to_insert = "<main> </main>";
+        $("#text").val(
+            x.slice(0, curPos) + text_to_insert + x.slice(curPos));
+    }
+</script>
+<script>
+    function zapisz() {
+        var textToSave = document.getElementById('text').value;
+        var hiddenElement = document.createElement('a');
+
+        hiddenElement.href = 'data:attachment/text,' + encodeURI(textToSave);
+        hiddenElement.target = '_blank';
+        hiddenElement.download = 'index.html';
+        hiddenElement.click();
+    }
+
+    document.getElementById('pobierz').addEventListener('click', zapisz);
+</script>
+<center>
+<div id="top_menu_btn">
+    <input type="submit" value="HTML5" onclick="HTML5()">
+    <input type="submit" value="CSS link" onclick="css()">
+    <input type="submit" value="script" onclick="script()">
+    <input type="submit" value="p" onclick="p()">
+    <input type="submit" value="H1" onclick="h1()">
+    <input type="submit" value="H2" onclick="h2()">
+    <input type="submit" value="H3" onclick="h3()">
+    <input type="submit" value="H4" onclick="h4()">
+    <input type="submit" value="H5" onclick="h5()">
+    <input type="submit" value="H6" onclick="h6()">
+    <input type="submit" value="div" onclick="div()">
+    <input type="submit" value="section" onclick="section()">
+    <input type="submit" value="article" onclick="article()">
+    <input type="submit" value="img" onclick="img()">
+    <input type="submit" value="table" onclick="table()">
+    <input type="submit" value="aside" onclick="aside()">
+    <input type="submit" value="nav" onclick="nav()">
+    <input type="submit" value="input" onclick="input()">
+    <input type="submit" value="form" onclick="formularz()">
+    <input type="submit" value="footer" onclick="footer()">
+    <input type="submit" value="header" onclick="header()">
+    <input type="submit" value="main" onclick="main()">
+</div>
+</center>
+<center>
+    <br>
+    <button id="pobierz" onclick="zapisz()"><img src="floppy-disk.png" alt="Zapisz"></button>
+
+    <div id="kod">
+        <textarea id="text" rows="30" cols="80"></textarea>
+        <textarea id="text2" rows="30" cols="80"></textarea>
+    </div>
+</center>
+</body>
+</html>
