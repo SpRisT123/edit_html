@@ -21,9 +21,9 @@ $zpt = "SELECT * FROM znaczniki";
 $query = mysqli_query($connect,$zpt);
 $rows = mysqli_fetch_all($query,MYSQLI_ASSOC);
 
-foreach($rows as $w){
+foreach($rows as $r){
     echo<<<END
-        <input class="button" type="submit" value="{$w['wartosc']}" id="{$w['nazwa']}" onclick="insert('{$w['znacznik']}')">
+        <input class="button" type="submit" value="{$r['wartosc']}" id="{$r['nazwa']}" onclick="insert('{$r['znacznik']}')">
     END;
 }
 ?>
